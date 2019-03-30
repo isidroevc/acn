@@ -70,5 +70,9 @@
   "CentroAcopio": {
     "dataSource": "mongo",
     "public": true
+  },
+  "TRLocacion": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
