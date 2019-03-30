@@ -1,0 +1,36 @@
+{
+  "name": "Locacion",
+  "plural": "locaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": "persona"
+  },
+  "properties": {
+    "latitud": {
+      "type": "number",
+      "required": true
+    },
+    "longitud": {
+      "type": "number",
+      "required": true
+    },
+    "horaFecha": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "persona": {
+      "type": "belongsTo",
+      "model": "Persona",
+      "foreignKey": "idPersona"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

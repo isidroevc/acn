@@ -14,25 +14,61 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongo"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongo",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongo",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongo",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongo",
     "public": false
+  },
+  "Persona": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Rastrea": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Token": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Locacion": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Siniestro": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Autoridad": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Refugio": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Albergue": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "CentroAcopio": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

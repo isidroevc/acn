@@ -1,0 +1,38 @@
+{
+  "name": "Rastrea",
+  "plural": "rastreos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idPersonaA": {
+      "type": "any",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "idPersonaB": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "personaA": {
+      "type": "belongsTo",
+      "model": "Persona",
+      "foreignKey": "idPersonaA"
+    },
+    "personaB": {
+      "type": "belongsTo",
+      "model": "Persona",
+      "foreignKey": "idPersonaB"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

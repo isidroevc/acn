@@ -1,0 +1,57 @@
+{
+  "name": "Persona",
+  "plural": "personas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "correo": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "ciudadActual": {
+      "type": "string",
+      "required": true
+    },
+    "ciudadOrigen": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "asociados": {
+      "type": "hasMany",
+      "model": "Persona",
+      "foreignKey": "idPerosonaB",
+      "through": "Rastrea"
+    },
+    "token": {
+      "type": "hasMany",
+      "model": "Token",
+      "foreignKey": "idPersona"
+    },
+    "locacion": {
+      "type": "hasMany",
+      "model": "Location",
+      "foreignKey": "idPersona"
+    },
+    "rastreos": {
+      "type": "hasMany",
+      "model": "Rastrea",
+      "foreignKey": "idPerosonaA"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Refugio",
+  "plural": "refugios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "longitd": {
+      "type": "number",
+      "required": true
+    },
+    "latitud": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

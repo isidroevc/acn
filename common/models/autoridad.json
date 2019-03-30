@@ -1,0 +1,29 @@
+{
+  "name": "Autoridad",
+  "plural": "autoridades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "tipoDependencia": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "siniestro": {
+      "type": "hasMany",
+      "model": "Siniestro",
+      "foreignKey": "idAutoridad"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

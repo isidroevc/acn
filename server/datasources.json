@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongo": {
+    "host": "192.168.10.51",
+    "port": 27017,
+    "url": "mongodb://admin:admin@192.168.10.51:27017/acn",
+    "database": "acn",
+    "password": "admin",
+    "name": "mongo",
+    "user": "admin",
+    "connector": "mongodb"
   }
 }
